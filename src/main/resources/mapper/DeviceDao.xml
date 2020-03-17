@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.energy.dao.DeviceDao">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        DEVICEID, DEVICENAME, SWITCHSTATUS, COMMUNICATESTAUS, DEVICETYPE, FAULT_STATUS </sql>
+
+
+    <select id="count" resultType="java.lang.Integer">
+        select count(*) from M_DEVICE
+    </select>
+    
+    <select id="queryList" resultType="map">
+        select <include refid="Base_Column_List" /> from M_DEVICE
+    </select>
+</mapper>
