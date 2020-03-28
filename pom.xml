@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
 
     <name>oracle-conn</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Spring Boot for oracle</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
