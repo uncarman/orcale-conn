@@ -8,10 +8,9 @@ import org.springframework.web.filter.CorsFilter;
 
 /**
  * AJAX请求跨域
- * @author Mr.W
  * @time 2018-08-13
  */
-//@Configuration
+@Configuration
 public class CorsConfig {
     private CorsConfiguration buildConfig() {
         CorsConfiguration corsConfiguration = new CorsConfiguration();
